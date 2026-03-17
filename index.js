@@ -9,7 +9,7 @@ loadEvent();
 
 // FETCH OFFER
 async function loadOffer(){
-    const res = await fetch("http://127.0.0.1:8000/offer");
+    const res = await fetch("https://yoursandmineacademy.onrender.com/offer");
     const data = await res.json();
     document.getElementById("offerHeading").innerText = data.heading || "";
     document.getElementById("offerDescription").innerText = data.description || "";
