@@ -7,7 +7,7 @@ document.addEventListener("DOMContentLoaded", async () => {
 
     try {
 
-        const res = await fetch("http://127.0.0.1:8000/opportunities");
+        const res = await fetch("https://yoursandmineacademy.onrender.com/opportunities");
         const data = await res.json();
 
         container.innerHTML = "";
