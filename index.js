@@ -1,6 +1,6 @@
 // FETCH EVENT
 async function loadEvent(){
-    const res = await fetch("http://127.0.0.1:8000/event");
+    const res = await fetch("https://yoursandmineacademy.onrender.com/event");
     const data = await res.json();
     document.getElementById("eventHeading").innerText = data.heading || "";
     document.getElementById("eventDescription").innerText = data.description || "";
