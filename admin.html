@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+<meta charset="UTF-8">
+<title>Admin Portal</title>
+
+<link rel="stylesheet" href="admin.css">
+</head>
+
+<body>
+
+<div id="login-section">
+<div id="al">
+<h2 class="adminheading">Admin Login</h2>
+</div>
+<br>
+<div>
+<input id="admin-username" class="field" placeholder="Username">
+</div>
+<br>
+<div>
+<input id="admin-password" class="field" type="password" placeholder="Password">
+</div>
+<br>
+<div>
+<button onclick="login()" class="loginbutton">Login</button>
+</div>
+
+</div>
+
+
+<div id="admin-panel" style="display:none;">
+
+    <div class="navbar">
+    <div class="logo">
+        Y&M <span>Admin</span>
+    </div>
+
+    <button class="logout-btn" onclick="logout()">Logout</button>
+</div>
+<br>
+<div id="update">
+<div class="updatecontent">
+    
+<h2 class="adminheading">Update Event</h2>
+<br>
+<input id="event-heading" class="field" placeholder="Event Heading">
+<br>
+
+<textarea id="event-description" placeholder="Event Description"class="field"></textarea>
+<br>
+
+<button onclick="updateEvent()" class="loginbutton">Save Event</button>
+</div>
+<br>
+<div class="updatecontent">
+<h2 class="adminheading">Update Offer</h2>
+<br>
+<input id="offer-heading" class="field" placeholder="Offer Heading">
+<br>
+
+<textarea id="offer-description" placeholder="Offer Description"class="field"></textarea>
+<br>
+
+<button onclick="updateOffer()" class="loginbutton">Save Offer</button>
+</div>
+</div>
+
+<br>
+<div id="updateop">
+
+<div class="updatecontent">
+<h2 class="adminheading">Add Vacancies</h2>
+<br>
+<input id="heading" class="field" placeholder="Heading">
+<br>
+
+<textarea id="description" placeholder="Description about the Vacancy"class="field"></textarea>
+<br>
+
+<button onclick="addOpportunity()" class="loginbutton">Add</button>
+</div>
+
+<br>
+<div class="updatecontent">
+<h2 class="adminheading">Available Vacancies</h2>
+<br>
+<div id="opportunities-list" >
+
+</div>
+
+
+</div>
+
+
+</div>
+
+
+</div>
+
+<script src="admin.js"></script>
+
+</body>
+</html>

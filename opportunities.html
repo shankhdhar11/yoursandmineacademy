@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+<title>Opportunities</title>
+
+<link rel="stylesheet" href="opportunities.css">
+<!--Remixicons-->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.6.0/remixicon.min.css">
+</head>
+
+<body>
+
+
+    <div id="pagewrapper">
+    <nav id="navbar">
+        <div id="logodiv">
+            <div id="logo">
+                <img src="images.png" class="logoimg" alt="logo">
+                <div id="logotext">
+                    <h2 style="color:black" id="logotxt">  Y&M <span style="color:grey">Academy<br>  and Productions</span></h2>
+                </div>
+            </div>
+        </div>
+
+        <div id="home" class="optionbox">
+            <a href="index.html" class="option">Home</a>
+        </div>
+        <div id="Courses" class="optionbox">
+            <a href="courses.html" class="option">Courses</a>
+        </div>
+        <div id="musicproduction" class="optionbox">
+            <a href="musicproduction.html" class="option">Music Production</a>
+        </div>
+        <div id="services" class="optionbox">
+            <a href="services.html" class="option">Services</a>
+        </div>
+        <div id="about" class="optionbox">
+            <a href="about.html" class="option">About</a>
+        </div>
+        <div id="franchise" class="optionbox">
+            <a href="franchise.html" class="option">Franchise</a>
+        </div>
+        <div id="contact us" class="optionbox">
+            <a href="contactus.html" class="option">Contact Us</a>
+        </div>
+        <div id="opportunitiess" class="optionbox">
+            <a href="opportunities.html" id="opportunityoption" class="option">Opportunities</a>
+        </div>
+        <div id="login">
+            <button id="loginbtn" type="button" onclick="authenticationpage()"><b>Admin Login</b></button>
+        </div>
+        <div id="menu">
+            <i class="ri-menu-3-line" id="menubtn" onclick="menulist()" ></i>
+        </div>
+        <div id="cross">
+            <i class="ri-close-fill" id="crossbtn" onclick="crosslist()" ></i>
+        </div>
+    </nav>
+
+    <div id="navlistdiv">
+        <ul id="navlist">
+            <li><a href="index.html" class="listoptions">Home</a></li>
+            <br>
+            <li><a href="courses.html" class="listoptions">Course</a></li>
+            <br>
+            <li><a href="musicproduction.html" class="listoptions">Music Production</a></li>
+            <br>
+            <li><a href="services.html" class="listoptions">Services</a></li>
+            <br>
+            <li><a href="about.html" class="listoptions">About</a></li>
+            <br>
+            <li><a href="franchise.html" class="listoptions">Franchise</a></li>
+            <br>
+            <li><a href="contactus.html" class="listoptions">Contact Us</a></li>
+            <br>
+            <li><a href="opportunities.html" class="listoptions">Opportunities</a></li>
+            <br>
+            <li> <button id="loginbtn2" type="button" onclick="authenticationpage()"><b>Admin Login</b></button></li>
+            <br>
+        </ul>
+    </div>
+        <section id="section1">
+            <div id="container1">
+                <h1 id="heading">Join <span id="headingspan">Us</span></h1>
+                <p>Explore exciting career opportunities and join our team to grow,</p>
+                <p>innovate, and build a successful future with us.</p>
+
+                <br><br>
+                <div id="socialmedia">
+                    <button type="button" class="socialmediabutton" onclick="fb()" id="facebook"><i class="ri-facebook-fill"></i></button>
+                    <button type="button" class="socialmediabutton" onclick="insta()" id="instagram"><i class="ri-instagram-fill"></i></button>
+                    <button type="button" class="socialmediabutton" onclick="twit()" id="twitter"><i class="ri-twitter-fill"></i></button>
+                    <button type="button" class="socialmediabutton" onclick="linkdn()" id="linkedin"><i class="ri-linkedin-fill"></i></button>
+                    <button type="button" class="socialmediabutton" onclick="yt()" id="youtube"><i class="ri-youtube-fill"></i></button>
+                </div>
+            </div>
+        </section>
+
+
+
+        <section id="section2">
+            <div id="container2">
+                <h1 id="heading2">Opportunities</h1>
+                <hr>
+                <br>
+
+                <div id="opportunities"></div>
+            </div>
+        </section>
+
+
+        <section id="section3">
+            <div id="container3">
+                <button type="button" id="applybutton">Apply now</button>
+            </div>
+        </section>
+        <br><br>
+        <section id="section4">
+            <div id="container4">
+                <br>
+                <h2 id="applyheading">Apply</h2>
+                <br>
+                <input type="text" placeholder="Full name" id="name" class="field">
+                <br>
+                <input type="text" placeholder="Email" id="email" class="field">
+                <br>
+                <input type="tel" placeholder="Phone number" id="phonenumber" class="field">
+                <br>
+                <input type="file" accept="application/pdf , .pdf" placeholder="Resume" id="Resume" class="field">
+                <br>
+                <textarea placeholder="Role for which you wan't to apply" id="role" class="field"></textarea>
+                <br>
+                <textarea placeholder="Tell us about your experience" id="experience" class="field"></textarea>
+                <br>
+                <div id="buttonsdiv">
+                <button type="button" id="submit">Submit</button>
+                <button type="button" id="close">Close</button>
+                </div>
+                <br>
+            </div>
+        </section>
+
+ 
+
+    </div>
+
+<script src="opportunities.js"></script>
+<script src="script.js"></script>
+</body>
+
+</html>
