@@ -27,7 +27,7 @@ async function login(){
     const username = document.getElementById("admin-username").value;
     const password = document.getElementById("admin-password").value;
 
-    const res = await fetch("http://127.0.0.1:8000/login",{
+    const res = await fetch("https://yoursandmineacademy.onrender.com/login",{
 
         method:"POST",
 
@@ -65,7 +65,7 @@ async function updateEvent(){
 
     const token = localStorage.getItem("admin_token");
 
-    const res = await fetch("http://127.0.0.1:8000/admin/update-event",{
+    const res = await fetch("https://yoursandmineacademy.onrender.com/admin/update-event",{
 
         method:"POST",
 
@@ -92,7 +92,7 @@ async function updateOffer(){
 
     const token = localStorage.getItem("admin_token");
 
-    const res = await fetch("http://127.0.0.1:8000/admin/update-offer",{
+    const res = await fetch("https://yoursandmineacademy.onrender.com/admin/update-offer",{
 
         method:"POST",
 
@@ -119,7 +119,7 @@ async function addOpportunity(){
 
     const token = localStorage.getItem("admin_token");
 
-    const res = await fetch("http://127.0.0.1:8000/admin/add-opportunity",{
+    const res = await fetch("https://yoursandmineacademy.onrender.com/admin/add-opportunity",{
 
         method:"POST",
 
@@ -143,7 +143,7 @@ async function addOpportunity(){
 
 async function loadOpportunities(){
 
-    const res = await fetch("http://127.0.0.1:8000/opportunities");
+    const res = await fetch("https://yoursandmineacademy.onrender.com/opportunities");
 
     const data = await res.json();
 
@@ -176,7 +176,7 @@ async function deleteOpportunity(id){
 
     const token = localStorage.getItem("admin_token");
 
-    const res = await fetch(`http://127.0.0.1:8000/admin/delete-opportunity/${id}`,{
+    const res = await fetch(`https://yoursandmineacademy.onrender.com/admin/delete-opportunity/${id}`,{
 
         method:"DELETE",
 
