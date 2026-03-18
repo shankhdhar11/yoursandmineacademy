@@ -3,12 +3,12 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
+    <title>Y&M Academy - Home</title>
     <link rel="stylesheet" href="style.css">
     <!--Remixicons-->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.6.0/remixicon.min.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&family=Poppins:wght@600;700;800&display=swap">
+</head>
 <body>
     <div id="pagewrapper">
     <nav id="navbar">
@@ -39,7 +39,7 @@
         <div id="franchise" class="optionbox">
             <a href="franchise.html" class="option">Franchise</a>
         </div>
-        <div id="contact us" class="optionbox">
+        <div id="contactus" class="optionbox">
             <a href="contactus.html" class="option">Contact Us</a>
         </div>
         <div id="opportunities" class="optionbox">
@@ -59,25 +59,17 @@
     <div id="navlistdiv">
         <ul id="navlist">
             <li><a href="index.html" class="listoptions">Home</a></li>
-            <br>
             <li><a href="courses.html" class="listoptions">Course</a></li>
-            <br>
             <li><a href="musicproduction.html" class="listoptions">Music Production</a></li>
-            <br>
             <li><a href="services.html" class="listoptions">Services</a></li>
-            <br>
             <li><a href="about.html" class="listoptions">About</a></li>
-            <br>
             <li><a href="franchise.html" class="listoptions">Franchise</a></li>
-            <br>
             <li><a href="contactus.html" class="listoptions">Contact Us</a></li>
-            <br>
             <li><a href="opportunities.html" class="listoptions">Opportunities</a></li>
-            <br>
-            <li> <button id="loginbtn2" type="button" onclick="authenticationpage()"><b>Admin Login</b></button></li>
-            <br>
+            <li><button id="loginbtn2" type="button" onclick="authenticationpage()"><b>Admin Login</b></button></li>
         </ul>
     </div>
+
     <section id="section">
         <div id="container1">
             <div id="div1">
@@ -85,9 +77,11 @@
                 <hr>
                 <p>Join the ultimate creative hub. Expert-led courses, professional studios, and a community that amplifies your talent.</p>
                 
-                <button type="button" id="explorecourses" onclick="coursestransfer()" ><i class="ri-search-line"></i>Explore Courses</button>
-                <button type="button" id="callnow" onclick="makeCall()" ><i class="ri-phone-line"></i>Call Now</button>
-                <br><br>
+                <div style="margin-top: 0.5rem;">
+                    <button type="button" id="explorecourses" onclick="coursestransfer()"><i class="ri-search-line"></i> Explore Courses</button>
+                    <button type="button" id="callnow" onclick="makeCall()"><i class="ri-phone-line"></i> Call Now</button>
+                </div>
+
                 <div id="socialmedia">
                     <button type="button" class="socialmediabutton" onclick="fb()" id="facebook"><i class="ri-facebook-fill"></i></button>
                     <button type="button" class="socialmediabutton" onclick="insta()" id="instagram"><i class="ri-instagram-fill"></i></button>
@@ -95,8 +89,6 @@
                     <button type="button" class="socialmediabutton" onclick="linkdn()" id="linkedin"><i class="ri-linkedin-fill"></i></button>
                     <button type="button" class="socialmediabutton" onclick="yt()" id="youtube"><i class="ri-youtube-fill"></i></button>
                 </div>
-
-               
             </div>
 
             <div id="div2">
@@ -106,22 +98,20 @@
     </section>
 
     <section id="section2">
-    <div id="container2">
-        <div id="offersdiv">
-            <div class="head"><h4>Limited Offer</h4></div>
-            <h1 id="offerHeading"></h1>
-            <p id="offerDescription"></p>
-            
+        <div id="container2">
+            <div id="offersdiv">
+                <div class="head"><h4>Limited Offer</h4></div>
+                <h1 id="offerHeading"></h1>
+                <p id="offerDescription"></p>
+            </div>
+            <div id="eventsdiv">
+                <div class="head"><h4>Upcoming Event</h4></div>
+                <h1 id="eventHeading"></h1>
+                <p id="eventDescription"></p>
+            </div>
         </div>
-        <div id="eventsdiv">
-            <div class="head"><h4>Upcoming Event</h4></div>
-            <h1 id="eventHeading"></h1>
-            <p id="eventDescription"></p>
-            
-        </div>
-    </div>
-</section>
-<script src="index.js"></script>
+    </section>
+    <script src="index.js"></script>
 
     <section id="section3">
         <div id="container3">
@@ -129,7 +119,6 @@
                 <h1 id="glimpsesheading">Glimpses of Achievements</h1>
                 <hr id="hr2">
             </div>
-            
         </div>
         <div class="marquee">
             <div class="marquee-content">
@@ -140,39 +129,38 @@
             </div>
         </div>  
     </section>
-    <br><br><br><br><br>
+
     <footer>
     <section id="section4">
         <div id="container4">
             <div id="aboutym">
                 <div id="logoandtext">
+                    <div>
+                        <img src="images.png" class="logoimg" alt="logo">
+                    </div>
+                    <div class="logotext">
+                        <h2 style="color:black" id="logotxt">  Y&M <span style="color:grey">Academy<br>  and Productions</span></h2> 
+                    </div>
+                </div>
                 <div>
-                    <img src="images.png" class="logoimg" alt="logo">
-                </div>
-                <div class="logotext">
-                    <h2 style="color:black" id="logotxt">  Y&M <span style="color:grey">Academy<br>  and Productions</span></h2> 
-                </div>
-                </div>
-
-                <div >
-                    <p id="logopara">Empowering the next generation of music<br> producers and artists with world-class education, <br> premium studio facilities, and a vibrant community.</p>
+                    <p id="logopara">Empowering the next generation of music producers and artists with world-class education, premium studio facilities, and a vibrant community.</p>
                 </div>
             </div>
-            <br><br>
+
             <div id="Quicklinks">
                 <div class="footerheadings"><h2>Quick Links</h2></div>
                 <ul id="quicklinkslist">
-                    <li><a href="#section1" class="listitem">Home</a></li>
-                    <li><a href="courses.html"  class="listitem">courses</a></li>
-                    <li><a href="musicproduction.html"  class="listitem">Music Production </a></li>
-                    <li><a href="Services.html"  class="listitem">Services</a></li>
+                    <li><a href="index.html" class="listitem">Home</a></li>
+                    <li><a href="courses.html"  class="listitem">Courses</a></li>
+                    <li><a href="musicproduction.html"  class="listitem">Music Production</a></li>
+                    <li><a href="services.html"  class="listitem">Services</a></li>
                     <li><a href="about.html"  class="listitem">About</a></li>
                     <li><a href="franchise.html"  class="listitem">Franchise</a></li>
                     <li><a href="contactus.html"  class="listitem">Contact Us</a></li>
                     <li><a href="opportunities.html"  class="listitem">Opportunities</a></li>
                 </ul>
             </div>
-            <br><br>
+
             <div id="programs">
                 <ul id="programslist">
                     <li><h2>Music Production</h2></li>
@@ -183,11 +171,11 @@
                     <li><p class="listitem fontsize">Event Management</p></li>
                 </ul>
             </div>
-            <br><br>
+
             <div id="contact">
                 <ul id="contactuslist">
                     <li><h2>Contact Us</h2></li>
-                    <li><p class="listitem fontsize"><i class="ri-map-pin-line"></i>Y&M Academy <br> 1st floor, Petals Preschool,<br> Plot no-21, Sector 5, Vaishali,<br> Ghaziabad, Uttar Pradesh 201019</p></li>
+                    <li><p class="listitem fontsize"><i class="ri-map-pin-line"></i> Y&M Academy, Vaishali Sector 5, Ghaziabad</p></li>
                     <li><p class="listitem fontsize"><i class="ri-phone-line"></i> +918076009799</p></li>
                     <li><p class="listitem fontsize"><i class="ri-mail-line"></i> info@yoursandmineacademy.com</p></li>
                 </ul>
@@ -196,7 +184,6 @@
     </section>
     </footer>
     </div>
-
 
     <script src="script.js"></script>
     
